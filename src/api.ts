@@ -1,12 +1,10 @@
 import express, { Request, Response } from "express";
 
-// Create a new express application instance
-const app: express.Application = express();
+export const app: express.Application = express();
 
 app.use(express.json());
 
-// Define the POST endpoint
-app.post("/dummy", (req: Request, res: Response) => {
+app.post("/getLowestTemperature", (req: Request, res: Response) => {
   const response = "Hello World!";
 
   res.json({

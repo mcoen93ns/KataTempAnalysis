@@ -1,6 +1,6 @@
-Feature: Cookiecutter
+Feature: Determine lowest temperature
 
-Scenario: It works!
-	Given the template works
-	When the user tries to take half of 2
-    Then the result is 1
+Scenario: 1 is the lowest temperature
+	Given an API consumer wants to know the lowest temperature from a list of temperatures
+	When our API is invoked with a list of temperatures of which 1 is the lowest
+	Then the response will contain 1 as the lowest temperature
